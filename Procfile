@@ -1,1 +1,0 @@
-web: wine server.exe
