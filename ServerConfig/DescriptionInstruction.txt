@@ -1,0 +1,28 @@
+The description only contains a total of 20 lines.
+Please do not use a large number of characters, 
+as this affects the size of the sent packet and the Internet. 
+The maximum number of characters summing all characters in this file is 1024 (its recommended, but limit is 8000, if you reach the 1024 limit then players can not receive your server in server list)
+
+Percentage symbols are not shown in the game. 
+
+Functions:	
+r
+g
+b
+y
+w
+p
+align
+tab|XScale|
+font|FontName,Size,bold,italic,underlined|
+color|r,g,b|
+clickable|clickable?,weburl,ifmouseOnTextR,ifmouseOnTextG,ifmouseOnTextB|
+
+DON'T USE SPACES IN FUNCTIONS!
+
+Example:
+
+%font|Tahoma,21,1,1,1|%%color|255,0,255|%SUPER ROLE-PLAY SERVER
+%font|Calibri,26,0,0,0|%%color|255,0,255|%%align%%tab|160|%%clickable|1,https://google.com,52,229,235|%https://google.com%clickable|0|%
+%font|GFX\fonts\cour\Courier New Rus.tff,27,1,0,1|%%color|192,0,0|%%tab|40|%PLEASE DONT CONNECT
+%font|GFX\fonts\cour\Courier New Rus.tff,27,1,0,1|%%color|255,0,0|%TO THIS SERVER!

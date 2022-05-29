@@ -1,0 +1,282 @@
+<html>
+<head>
+</head>
+<body>
+	<style>
+		body{
+			background-color: rgb(200, 200, 200);
+		}
+
+		h1.default{font: normal 12px arial}
+		h1.c{font: normal 24px arial}
+		
+		h1.sample{
+			font: normal 16px arial;
+			margin-left: 30px;
+			color: rgb(0, 0, 255)
+		}
+	</style>
+
+<center> <h1 class = c> General </h1> </center>
+<ol>
+<li> Comments are denoted similarly to many other languages: // and the pair / * * / </li>
+<li> Language ignores case. </li>
+<li> The symbol ";" means line splitting and end of statement. If there is nothing after the symbol, then this is an error. </li>
+<li> A preprocessor directive is denoted with a # at the beginning of a line. <i> (at the time of this writing, only one #include directive is available) </i> </li>
+</ol>
+
+
+<center> <h1 class = c> Simple Data Types </h1> </center>
+Writing simple data types in expressions: <br> <br>
+Integer - 1, 20, 4000; <br>
+Floating point - 3.14, .1 <br>
+String - "stroka" <br>
+Constant - null, true, false, pi <br>
+Variable - my_var <br>
+<br> <br>
+
+
+<center> <h1 class = c> Variables </h1> </center>
+Variable names must begin with a Latin letter or an underscore, and then can contain both numbers, letters and underscores. For example: <br> <br>
+
+<h1 class = sample>
+local myvar <br>
+local _myvar <br>
+local _my_var1 <br> <br>
+</h1>
+
+Below is a table of variable types. <br>
+
+<table border = 2>
+<tr>
+<td> <b> Ad keyword </b> </td>
+<td> <b> Scope </b> </td>
+<td> <b> Value after function call </b> </td>
+</tr>
+
+<tr>
+<td> local </td>
+<td> Called function </td>
+<td> Not saved </td>
+</tr>
+
+<tr>
+<td> static </td>
+<td> Called function </td>
+<td> Saved </td>
+</tr>
+
+<tr>
+<td> global </td>
+<td> Everywhere </td>
+<td> Saved </td>
+</tr>
+
+<tr>
+<td> public </td>
+<td> Everywhere </td>
+<td> Saved </td>
+</tr>
+</table>
+
+<br>
+
+<i> Note: </i> public differs from a global variable only in the ability to access it outside the script through a list. Variables of this type are also involved in instancing.
+
+<br> <br>
+
+When declaring, it is necessary to take into account:
+<ul>
+<li> If a constant or function with the same name exists, it is considered an error. </li>
+<li> If a variable is accessible only from a certain function (i.e. local or static), then the coincidence of names among the variables of this function is checked. </li>
+<li> If it is required to declare a variable of a global type (global or public), then the coincidence of names among global ones is checked. BUT! If a local or static variable with this name is declared, then it will be used instead of the global one. In this case, the compiler will display a name conflict warning. </li>
+</ul>
+
+<br>
+
+<center> <h1 class = c> Operators </h1> </center>
+
+Below is a table of operators (in order of processing) <br>
+<table border = 2>
+<tr>
+<td> 1 </td>
+<td> Simple data types, function (), (), [], args </td>
+</tr>
+
+<tr>
+<td> 2 </td>
+<td> * (pointer), ++, - </td>
+</tr>
+
+<tr>
+<td> 3 </td>
+<td> ** (exponentiation) </td>
+</tr>
+
+<tr>
+<td> 4 </td>
+<td> ~ </td>
+</tr>
+
+<tr>
+<td> 5 </td>
+<td> - (change sign) </td>
+</tr>
+
+<tr>
+<td> 6 </td>
+<td> *, /,% </td>
+</tr>
+
+<tr>
+<td> 7 </td>
+<td> +, - </td>
+</tr>
+
+<tr>
+<td> 8 </td>
+<td> <<, >> </td>
+</tr>
+
+<tr>
+<td> 9 </td>
+<td> & </td>
+</tr>
+
+<tr>
+<td> 10 </td>
+<td> ^ </td>
+</tr>
+
+<tr>
+<td> 11 </td>
+<td> | </td>
+</tr>
+
+<tr>
+<td> 12 </td>
+<td> <, <=,>,> =, ==,! = </td>
+</tr>
+
+<tr>
+<td> 13 </td>
+<td> not </td>
+</tr>
+
+<tr>
+<td> 14 </td>
+<td> and </td>
+</tr>
+
+<tr>
+<td> 15 </td>
+<td> or </td>
+</tr>
+
+<tr>
+<td> 16 </td>
+<td> len, typeof </td>
+</tr>
+
+<tr>
+<td> 17 </td>
+<td> = </td>
+</tr>
+</table>
+
+<center> <h1 class = c> Keywords (reserved identifiers) </h1> </center>
+
+<ul>
+<li> const </li>
+<li> local </li>
+<li> static </li>
+<li> global </li>
+<li> public </li>
+<li> def </li>
+<li> end </li>
+<li> if </li>
+<li> else </li>
+<li> select </li>
+<li> case </li>
+<li> for </li>
+<li> while </li>
+<li> do </li>
+<li> repeat </li>
+<li> break </li>
+<li> continue </li>
+<li> return </li>
+<li> args </li>
+<li> len </li>
+<li> typeof </li>
+<li> not </li>
+<li> and </li>
+<li> or </li>
+</ul>
+
+<center> <h1 class = c> Constants </h1> </center>
+
+Constants can be declared like regular variables. They can also be declared by reference to another constant, for example: <br> <br>
+
+
+<h1 class = sample>
+const a = 1 <br>
+const b = a
+</h1>
+<br>
+
+There are also superconstants - constants declared by default. These are null, true, false, pi, etc.
+
+<center> <h1 class = c> Functions </h1> </center>
+
+Functions are declared with the keyword def <i> function_name </i> (<i> parameters </i>). The default parameter values ??can be not only simple data types, but also expressions. All parameters are local variables of the declared function.
+ 
+When declaring a function, keep in mind that if a function, constant, local or global variable with the same name is declared, it is considered an error.
+<br>
+
+The default expression in the parameter is evaluated only if the value of the parameter is not passed when the function is called.
+
+
+
+<center> <h1 class = c> Arrays </h1> </center>
+Arrays are created using square brackets. For example: <br>
+<h1 class = sample> array = [10, SE_INT] // Create an array of 10 values or </h1>
+<h1 class = sample> array = [10, SE_FLOAT] // Create an array of 10 values or </h1>
+<h1 class = sample> array = [10, SE_STRING] // Create an array of 10 values </h1>
+
+Access to an array, as in many other PLs, is carried out using an index:
+
+<h1 class = sample>
+a = array [0] // a = 1 <br>
+b = array [1] // b = 2 <br>
+</h1>
+
+To change the value of an array:
+
+<h1 class = sample>
+array [0] = rand (3) <br>
+</h1>
+
+The size of the array can be found using the len operator: <br>
+
+<h1 class = sample>
+length = len array // length = 3 <br>
+</h1>
+
+Although strings are not represented as arrays, their length can also be found using the len operator. (example: len "stroka") <br> <br>
+
+<center> <h1 class = c> Index </h1> </center>
+
+To get a pointer to a variable, you need to put "*" in front of the identifier. Pointers are used to pass the variable itself (and not its value) to the function argument. Example:
+<h1 class = sample>
+local r, g, b <br>
+get_color (* r, * g, * b) <br> <br>
+
+local color = [r, g, b] <br><br>
+def get_color(r,g,b) <br>
+r = 255 <br>
+g = 0 <br>
+b = 255 <br>
+end
+</h1>
+</body>
+</html>

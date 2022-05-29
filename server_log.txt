@@ -1,0 +1,69 @@
+[11:24:28] Server started on port 50021 with tickrate 128
+[11:24:28] Server version: v1.2.6
+[11:24:28] -----------------
+[11:24:28] Max players: 16
+[11:24:28] Map seed: a77z
+[11:24:28] Map size: 2 chunks
+[11:24:28] Hostname: SCP Server v1.2.6
+[11:24:28] Full synchronization: True
+[11:24:28] Difficulty: safe
+[11:24:28] Time out time (ms): 30000
+[11:24:28] Intro enabled: False
+[11:24:28] Voice chat: True
+[11:24:28] Voice quality: 48000 hz
+[11:24:28] No cheat mode: False
+[11:24:28] Jump mode: True
+[11:24:28] Keep inventory: False
+[11:24:28] Gravity: 0.0023
+[11:24:28] Rounds limit per start: 2
+[11:24:28] RCON Password: 
+[11:24:28] Breach mode: False
+[11:24:28] Using central server: True
+[11:24:28] -----------------
+[11:24:28] Creating scene...
+[11:24:37] Server started on port 50021 with tickrate 128
+[11:24:37] Server version: v1.2.6
+[11:24:37] -----------------
+[11:24:37] Max players: 16
+[11:24:37] Map seed: do892j1
+[11:24:37] Map size: 2 chunks
+[11:24:37] Hostname: SCP Server v1.2.6
+[11:24:37] Full synchronization: True
+[11:24:37] Difficulty: safe
+[11:24:37] Time out time (ms): 30000
+[11:24:37] Intro enabled: False
+[11:24:37] Voice chat: True
+[11:24:37] Voice quality: 48000 hz
+[11:24:37] No cheat mode: False
+[11:24:37] Jump mode: True
+[11:24:37] Keep inventory: False
+[11:24:37] Gravity: 0.0023
+[11:24:37] Rounds limit per start: 2
+[11:24:37] RCON Password: 
+[11:24:37] Breach mode: False
+[11:24:37] Using central server: True
+[11:24:37] -----------------
+[11:24:37] Creating scene...
+[11:24:44] Server started on port 50021 with tickrate 128
+[11:24:44] Server version: v1.2.6
+[11:24:44] -----------------
+[11:24:44] Max players: 16
+[11:24:44] Map seed: 561aaj4
+[11:24:44] Map size: 2 chunks
+[11:24:44] Hostname: SCP Server v1.2.6
+[11:24:44] Full synchronization: True
+[11:24:44] Difficulty: safe
+[11:24:44] Time out time (ms): 30000
+[11:24:44] Intro enabled: False
+[11:24:44] Voice chat: True
+[11:24:44] Voice quality: 48000 hz
+[11:24:44] No cheat mode: False
+[11:24:44] Jump mode: True
+[11:24:44] Keep inventory: False
+[11:24:44] Gravity: 0.0023
+[11:24:44] Rounds limit per start: 2
+[11:24:44] RCON Password: 
+[11:24:44] Breach mode: False
+[11:24:44] Using central server: True
+[11:24:44] -----------------
+[11:24:44] Creating scene...

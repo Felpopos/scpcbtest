@@ -1,0 +1,46 @@
+guns.ini:
+
+damage - One bullet damage
+shoottticks - How much bullets on fire
+spread - Bullet spread
+
+Shoot ticks and spread synchronization doesn't work on client, so not recommended
+
+game.ini:
+
+[player]:
+
+falldamage - turn on fall damage
+prediction(dont work)
+interpolation - turn on full synchronization of player moving (include lags)
+playertoplayercollision - turn on server-side collision for players-to-players (works only with interpolation)
+
+[server]:
+
+framelimit - recommend 300
+throughwallsbulletanticheat - check player to player collision (if player object see player object then damage is executed)
+itemsraycastcollision(dont work, already optimized in server source code)
+fixedtimesteps - no sense
+deltalimit - how many actions will happen during the lag time (recommended to not touch this)
+maxplayersspawn - how many players will spawn on MTF or Chaos Spawn (recommended 8)
+friendlyfire - self explanatory
+
+roles.ini:
+
+; HEALTH AND SPEEDMULT WORKS ONLY WITH fullsynchronization 1 ; This settings apply on match restart
+; keys: (if [role or function] [key]), example: (if class d exists)
+; functions: random, exists, notexists
+; items: itemname/itemtempname
+
+health - self explanatory
+speedmult - players usual speed multiply (works only with interpolation 1)
+item1 - self explanatory
+item2 = self explanatory
+item3 = self explanatory
+item4 = self explanatory
+item5 = self explanatory
+item6 = self explanatory
+item7 = self explanatory
+item8 = self explanatory
+item9 = self explanatory
+item10 = self explanatory

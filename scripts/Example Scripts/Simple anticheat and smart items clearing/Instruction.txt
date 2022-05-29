@@ -1,0 +1,8 @@
+Put file to server folder.
+Put the script to server.cfg: (script line)
+script ll.gsc
+
+Included:
+Anti flood system
+Smart items clear system
+Simple anticheat
